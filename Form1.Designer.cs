@@ -36,10 +36,10 @@
             this.Yellow_btn = new System.Windows.Forms.Button();
             this.Red_btn = new System.Windows.Forms.Button();
             this.Purple_btn = new System.Windows.Forms.Button();
-            this.kod1_btn1 = new System.Windows.Forms.Button();
-            this.kod1_btn2 = new System.Windows.Forms.Button();
-            this.kod1_btn3 = new System.Windows.Forms.Button();
-            this.kod1_btn4 = new System.Windows.Forms.Button();
+            this.code1_btn1 = new System.Windows.Forms.Button();
+            this.code1_btn2 = new System.Windows.Forms.Button();
+            this.code1_btn3 = new System.Windows.Forms.Button();
+            this.code1_btn4 = new System.Windows.Forms.Button();
             this.Color1_btn = new System.Windows.Forms.Button();
             this.Color2_btn = new System.Windows.Forms.Button();
             this.Color3_btn = new System.Windows.Forms.Button();
@@ -49,6 +49,34 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.code2_btn1 = new System.Windows.Forms.Button();
+            this.code2_btn2 = new System.Windows.Forms.Button();
+            this.code2_btn3 = new System.Windows.Forms.Button();
+            this.code2_btn4 = new System.Windows.Forms.Button();
+            this.code3_btn1 = new System.Windows.Forms.Button();
+            this.code3_btn2 = new System.Windows.Forms.Button();
+            this.code3_btn3 = new System.Windows.Forms.Button();
+            this.code3_btn4 = new System.Windows.Forms.Button();
+            this.code4_btn1 = new System.Windows.Forms.Button();
+            this.code4_btn2 = new System.Windows.Forms.Button();
+            this.code5_btn1 = new System.Windows.Forms.Button();
+            this.code4_btn3 = new System.Windows.Forms.Button();
+            this.code6_btn1 = new System.Windows.Forms.Button();
+            this.code5_btn2 = new System.Windows.Forms.Button();
+            this.code4_btn4 = new System.Windows.Forms.Button();
+            this.code6_btn2 = new System.Windows.Forms.Button();
+            this.code5_btn3 = new System.Windows.Forms.Button();
+            this.code5_btn4 = new System.Windows.Forms.Button();
+            this.code6_btn3 = new System.Windows.Forms.Button();
+            this.code6_btn4 = new System.Windows.Forms.Button();
+            this.code7_btn1 = new System.Windows.Forms.Button();
+            this.code8_btn1 = new System.Windows.Forms.Button();
+            this.code7_btn2 = new System.Windows.Forms.Button();
+            this.code8_btn2 = new System.Windows.Forms.Button();
+            this.code7_btn3 = new System.Windows.Forms.Button();
+            this.code7_btn4 = new System.Windows.Forms.Button();
+            this.code8_btn3 = new System.Windows.Forms.Button();
+            this.code8_btn4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start_btn
@@ -64,7 +92,7 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(412, 46);
+            this.listBox1.Location = new System.Drawing.Point(312, 171);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(20, 95);
             this.listBox1.TabIndex = 1;
@@ -126,37 +154,37 @@
             this.Purple_btn.UseVisualStyleBackColor = false;
             this.Purple_btn.Click += new System.EventHandler(this.Select_btn_Click);
             // 
-            // kod1_btn1
+            // code1_btn1
             // 
-            this.kod1_btn1.Location = new System.Drawing.Point(412, 272);
-            this.kod1_btn1.Name = "kod1_btn1";
-            this.kod1_btn1.Size = new System.Drawing.Size(42, 27);
-            this.kod1_btn1.TabIndex = 7;
-            this.kod1_btn1.UseVisualStyleBackColor = true;
+            this.code1_btn1.Location = new System.Drawing.Point(412, 272);
+            this.code1_btn1.Name = "code1_btn1";
+            this.code1_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code1_btn1.TabIndex = 7;
+            this.code1_btn1.UseVisualStyleBackColor = true;
             // 
-            // kod1_btn2
+            // code1_btn2
             // 
-            this.kod1_btn2.Location = new System.Drawing.Point(480, 272);
-            this.kod1_btn2.Name = "kod1_btn2";
-            this.kod1_btn2.Size = new System.Drawing.Size(40, 27);
-            this.kod1_btn2.TabIndex = 8;
-            this.kod1_btn2.UseVisualStyleBackColor = true;
+            this.code1_btn2.Location = new System.Drawing.Point(480, 272);
+            this.code1_btn2.Name = "code1_btn2";
+            this.code1_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code1_btn2.TabIndex = 8;
+            this.code1_btn2.UseVisualStyleBackColor = true;
             // 
-            // kod1_btn3
+            // code1_btn3
             // 
-            this.kod1_btn3.Location = new System.Drawing.Point(541, 272);
-            this.kod1_btn3.Name = "kod1_btn3";
-            this.kod1_btn3.Size = new System.Drawing.Size(41, 27);
-            this.kod1_btn3.TabIndex = 9;
-            this.kod1_btn3.UseVisualStyleBackColor = true;
+            this.code1_btn3.Location = new System.Drawing.Point(541, 272);
+            this.code1_btn3.Name = "code1_btn3";
+            this.code1_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code1_btn3.TabIndex = 9;
+            this.code1_btn3.UseVisualStyleBackColor = true;
             // 
-            // kod1_btn4
+            // code1_btn4
             // 
-            this.kod1_btn4.Location = new System.Drawing.Point(606, 272);
-            this.kod1_btn4.Name = "kod1_btn4";
-            this.kod1_btn4.Size = new System.Drawing.Size(36, 27);
-            this.kod1_btn4.TabIndex = 10;
-            this.kod1_btn4.UseVisualStyleBackColor = true;
+            this.code1_btn4.Location = new System.Drawing.Point(606, 272);
+            this.code1_btn4.Name = "code1_btn4";
+            this.code1_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code1_btn4.TabIndex = 10;
+            this.code1_btn4.UseVisualStyleBackColor = true;
             // 
             // Color1_btn
             // 
@@ -223,7 +251,7 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(349, 46);
+            this.listBox2.Location = new System.Drawing.Point(349, 171);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(40, 56);
             this.listBox2.TabIndex = 18;
@@ -237,6 +265,230 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 19;
             this.label1.Text = "label1";
+            // 
+            // code2_btn1
+            // 
+            this.code2_btn1.Location = new System.Drawing.Point(412, 239);
+            this.code2_btn1.Name = "code2_btn1";
+            this.code2_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code2_btn1.TabIndex = 7;
+            this.code2_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code2_btn2
+            // 
+            this.code2_btn2.Location = new System.Drawing.Point(480, 239);
+            this.code2_btn2.Name = "code2_btn2";
+            this.code2_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code2_btn2.TabIndex = 8;
+            this.code2_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code2_btn3
+            // 
+            this.code2_btn3.Location = new System.Drawing.Point(541, 239);
+            this.code2_btn3.Name = "code2_btn3";
+            this.code2_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code2_btn3.TabIndex = 9;
+            this.code2_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code2_btn4
+            // 
+            this.code2_btn4.Location = new System.Drawing.Point(606, 239);
+            this.code2_btn4.Name = "code2_btn4";
+            this.code2_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code2_btn4.TabIndex = 10;
+            this.code2_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code3_btn1
+            // 
+            this.code3_btn1.Location = new System.Drawing.Point(412, 206);
+            this.code3_btn1.Name = "code3_btn1";
+            this.code3_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code3_btn1.TabIndex = 7;
+            this.code3_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code3_btn2
+            // 
+            this.code3_btn2.Location = new System.Drawing.Point(480, 206);
+            this.code3_btn2.Name = "code3_btn2";
+            this.code3_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code3_btn2.TabIndex = 8;
+            this.code3_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code3_btn3
+            // 
+            this.code3_btn3.Location = new System.Drawing.Point(541, 206);
+            this.code3_btn3.Name = "code3_btn3";
+            this.code3_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code3_btn3.TabIndex = 9;
+            this.code3_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code3_btn4
+            // 
+            this.code3_btn4.Location = new System.Drawing.Point(606, 206);
+            this.code3_btn4.Name = "code3_btn4";
+            this.code3_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code3_btn4.TabIndex = 10;
+            this.code3_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code4_btn1
+            // 
+            this.code4_btn1.Location = new System.Drawing.Point(412, 171);
+            this.code4_btn1.Name = "code4_btn1";
+            this.code4_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code4_btn1.TabIndex = 7;
+            this.code4_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code4_btn2
+            // 
+            this.code4_btn2.Location = new System.Drawing.Point(480, 171);
+            this.code4_btn2.Name = "code4_btn2";
+            this.code4_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code4_btn2.TabIndex = 8;
+            this.code4_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code5_btn1
+            // 
+            this.code5_btn1.Location = new System.Drawing.Point(412, 138);
+            this.code5_btn1.Name = "code5_btn1";
+            this.code5_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code5_btn1.TabIndex = 7;
+            this.code5_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code4_btn3
+            // 
+            this.code4_btn3.Location = new System.Drawing.Point(541, 171);
+            this.code4_btn3.Name = "code4_btn3";
+            this.code4_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code4_btn3.TabIndex = 9;
+            this.code4_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code6_btn1
+            // 
+            this.code6_btn1.Location = new System.Drawing.Point(412, 105);
+            this.code6_btn1.Name = "code6_btn1";
+            this.code6_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code6_btn1.TabIndex = 7;
+            this.code6_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code5_btn2
+            // 
+            this.code5_btn2.Location = new System.Drawing.Point(480, 138);
+            this.code5_btn2.Name = "code5_btn2";
+            this.code5_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code5_btn2.TabIndex = 8;
+            this.code5_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code4_btn4
+            // 
+            this.code4_btn4.Location = new System.Drawing.Point(606, 171);
+            this.code4_btn4.Name = "code4_btn4";
+            this.code4_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code4_btn4.TabIndex = 10;
+            this.code4_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code6_btn2
+            // 
+            this.code6_btn2.Location = new System.Drawing.Point(480, 105);
+            this.code6_btn2.Name = "code6_btn2";
+            this.code6_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code6_btn2.TabIndex = 8;
+            this.code6_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code5_btn3
+            // 
+            this.code5_btn3.Location = new System.Drawing.Point(541, 138);
+            this.code5_btn3.Name = "code5_btn3";
+            this.code5_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code5_btn3.TabIndex = 9;
+            this.code5_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code5_btn4
+            // 
+            this.code5_btn4.Location = new System.Drawing.Point(606, 138);
+            this.code5_btn4.Name = "code5_btn4";
+            this.code5_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code5_btn4.TabIndex = 10;
+            this.code5_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code6_btn3
+            // 
+            this.code6_btn3.Location = new System.Drawing.Point(541, 105);
+            this.code6_btn3.Name = "code6_btn3";
+            this.code6_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code6_btn3.TabIndex = 9;
+            this.code6_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code6_btn4
+            // 
+            this.code6_btn4.Location = new System.Drawing.Point(606, 105);
+            this.code6_btn4.Name = "code6_btn4";
+            this.code6_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code6_btn4.TabIndex = 10;
+            this.code6_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code7_btn1
+            // 
+            this.code7_btn1.Location = new System.Drawing.Point(412, 70);
+            this.code7_btn1.Name = "code7_btn1";
+            this.code7_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code7_btn1.TabIndex = 7;
+            this.code7_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code8_btn1
+            // 
+            this.code8_btn1.Location = new System.Drawing.Point(412, 37);
+            this.code8_btn1.Name = "code8_btn1";
+            this.code8_btn1.Size = new System.Drawing.Size(42, 27);
+            this.code8_btn1.TabIndex = 7;
+            this.code8_btn1.UseVisualStyleBackColor = true;
+            // 
+            // code7_btn2
+            // 
+            this.code7_btn2.Location = new System.Drawing.Point(480, 70);
+            this.code7_btn2.Name = "code7_btn2";
+            this.code7_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code7_btn2.TabIndex = 8;
+            this.code7_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code8_btn2
+            // 
+            this.code8_btn2.Location = new System.Drawing.Point(480, 37);
+            this.code8_btn2.Name = "code8_btn2";
+            this.code8_btn2.Size = new System.Drawing.Size(40, 27);
+            this.code8_btn2.TabIndex = 8;
+            this.code8_btn2.UseVisualStyleBackColor = true;
+            // 
+            // code7_btn3
+            // 
+            this.code7_btn3.Location = new System.Drawing.Point(541, 70);
+            this.code7_btn3.Name = "code7_btn3";
+            this.code7_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code7_btn3.TabIndex = 9;
+            this.code7_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code7_btn4
+            // 
+            this.code7_btn4.Location = new System.Drawing.Point(606, 70);
+            this.code7_btn4.Name = "code7_btn4";
+            this.code7_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code7_btn4.TabIndex = 10;
+            this.code7_btn4.UseVisualStyleBackColor = true;
+            // 
+            // code8_btn3
+            // 
+            this.code8_btn3.Location = new System.Drawing.Point(541, 37);
+            this.code8_btn3.Name = "code8_btn3";
+            this.code8_btn3.Size = new System.Drawing.Size(41, 27);
+            this.code8_btn3.TabIndex = 9;
+            this.code8_btn3.UseVisualStyleBackColor = true;
+            // 
+            // code8_btn4
+            // 
+            this.code8_btn4.Location = new System.Drawing.Point(606, 37);
+            this.code8_btn4.Name = "code8_btn4";
+            this.code8_btn4.Size = new System.Drawing.Size(36, 27);
+            this.code8_btn4.TabIndex = 10;
+            this.code8_btn4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -253,10 +505,38 @@
             this.Controls.Add(this.Color3_btn);
             this.Controls.Add(this.Color2_btn);
             this.Controls.Add(this.Color1_btn);
-            this.Controls.Add(this.kod1_btn4);
-            this.Controls.Add(this.kod1_btn3);
-            this.Controls.Add(this.kod1_btn2);
-            this.Controls.Add(this.kod1_btn1);
+            this.Controls.Add(this.code8_btn4);
+            this.Controls.Add(this.code8_btn3);
+            this.Controls.Add(this.code6_btn4);
+            this.Controls.Add(this.code6_btn3);
+            this.Controls.Add(this.code7_btn4);
+            this.Controls.Add(this.code3_btn4);
+            this.Controls.Add(this.code5_btn4);
+            this.Controls.Add(this.code7_btn3);
+            this.Controls.Add(this.code3_btn3);
+            this.Controls.Add(this.code5_btn3);
+            this.Controls.Add(this.code8_btn2);
+            this.Controls.Add(this.code2_btn4);
+            this.Controls.Add(this.code6_btn2);
+            this.Controls.Add(this.code2_btn3);
+            this.Controls.Add(this.code4_btn4);
+            this.Controls.Add(this.code7_btn2);
+            this.Controls.Add(this.code3_btn2);
+            this.Controls.Add(this.code5_btn2);
+            this.Controls.Add(this.code8_btn1);
+            this.Controls.Add(this.code1_btn4);
+            this.Controls.Add(this.code6_btn1);
+            this.Controls.Add(this.code2_btn2);
+            this.Controls.Add(this.code4_btn3);
+            this.Controls.Add(this.code7_btn1);
+            this.Controls.Add(this.code3_btn1);
+            this.Controls.Add(this.code5_btn1);
+            this.Controls.Add(this.code1_btn3);
+            this.Controls.Add(this.code4_btn2);
+            this.Controls.Add(this.code2_btn1);
+            this.Controls.Add(this.code4_btn1);
+            this.Controls.Add(this.code1_btn2);
+            this.Controls.Add(this.code1_btn1);
             this.Controls.Add(this.Purple_btn);
             this.Controls.Add(this.Red_btn);
             this.Controls.Add(this.Yellow_btn);
@@ -280,10 +560,10 @@
         private System.Windows.Forms.Button Yellow_btn;
         private System.Windows.Forms.Button Red_btn;
         private System.Windows.Forms.Button Purple_btn;
-        private System.Windows.Forms.Button kod1_btn1;
-        private System.Windows.Forms.Button kod1_btn2;
-        private System.Windows.Forms.Button kod1_btn3;
-        private System.Windows.Forms.Button kod1_btn4;
+        private System.Windows.Forms.Button code1_btn1;
+        private System.Windows.Forms.Button code1_btn2;
+        private System.Windows.Forms.Button code1_btn3;
+        private System.Windows.Forms.Button code1_btn4;
         private System.Windows.Forms.Button Color1_btn;
         private System.Windows.Forms.Button Color2_btn;
         private System.Windows.Forms.Button Color3_btn;
@@ -293,6 +573,34 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button code2_btn1;
+        private System.Windows.Forms.Button code2_btn2;
+        private System.Windows.Forms.Button code2_btn3;
+        private System.Windows.Forms.Button code2_btn4;
+        private System.Windows.Forms.Button code3_btn1;
+        private System.Windows.Forms.Button code3_btn2;
+        private System.Windows.Forms.Button code3_btn3;
+        private System.Windows.Forms.Button code3_btn4;
+        private System.Windows.Forms.Button code4_btn1;
+        private System.Windows.Forms.Button code4_btn2;
+        private System.Windows.Forms.Button code5_btn1;
+        private System.Windows.Forms.Button code4_btn3;
+        private System.Windows.Forms.Button code6_btn1;
+        private System.Windows.Forms.Button code5_btn2;
+        private System.Windows.Forms.Button code4_btn4;
+        private System.Windows.Forms.Button code6_btn2;
+        private System.Windows.Forms.Button code5_btn3;
+        private System.Windows.Forms.Button code5_btn4;
+        private System.Windows.Forms.Button code6_btn3;
+        private System.Windows.Forms.Button code6_btn4;
+        private System.Windows.Forms.Button code7_btn1;
+        private System.Windows.Forms.Button code8_btn1;
+        private System.Windows.Forms.Button code7_btn2;
+        private System.Windows.Forms.Button code8_btn2;
+        private System.Windows.Forms.Button code7_btn3;
+        private System.Windows.Forms.Button code7_btn4;
+        private System.Windows.Forms.Button code8_btn3;
+        private System.Windows.Forms.Button code8_btn4;
     }
 }
 

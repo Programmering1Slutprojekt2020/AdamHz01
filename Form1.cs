@@ -12,13 +12,14 @@ namespace Mastermind
 {
     public partial class Form1 : Form
     {
-        int[] combination = new int[4];
+        int[] combination = new int[4];    //correct combination
         int i;
-        Random slumptal = new Random();
-        int selectcolor = 0;
+        Random random = new Random();      
+        int selectcolor = 0;              //integer used in switch for primary answers
+        int UserTry = 0;                  //integer for user answer history
 
-        int[] try1 = new int[4];
-        int plats = 0;
+        int[] attempt = new int[4];          //users selected combination 
+        
 
 
 
@@ -30,13 +31,13 @@ namespace Mastermind
 
         private void Start_btn_Click(object sender, EventArgs e)
         {
-            for (i = 0; i < 4; i++)
+            for (i = 0; i < 4; i++)               //Creates the correct answer
             {
-                combination[i] = slumptal.Next(1,6);
-                listBox1.Items.Add(combination[i]);
+                combination[i] = random.Next(1,6);
+                listBox1.Items.Add(combination[i]);       //will not be used in final version 
             }
-            
-            Start_btn.Text = "";
+            //Removes start button
+            Start_btn.Text = ""; 
             Start_btn.Visible = false;
             timer1.Enabled = true; 
             Color1_btn.FlatAppearance.BorderSize = 3;
@@ -45,7 +46,7 @@ namespace Mastermind
             Color4_btn.FlatAppearance.BorderSize = 3;
 
 
-            Color1_btn.FlatAppearance.BorderColor = Color.Red; //markerar startposition
+            Color1_btn.FlatAppearance.BorderColor = Color.Red; //Marks start position
 
 
 
@@ -56,41 +57,28 @@ namespace Mastermind
 
         }
 
-        private void Blue_btn_Click(object sender, EventArgs e)
-        {
-            Blue_btn.Size = new Size(height:50, width:50);
-            switch (selectcolor)
-            {
-                case 1:
-                    Color1_btn.BackColor = Color.Blue;
-                    break;
-                case 2:
-                    Color2_btn.BackColor = Color.Blue;
-                    Blue_btn.FlatAppearance.BorderColor = Color.DarkRed;
-                    break;
-            }
-            Color1_btn.BackColor = Color.Blue;
-
-        }
+       
 
         private void Color1_btn_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Select_btn_Click(object sender, EventArgs e)
+        private void Select_btn_Click(object sender, EventArgs e) //Shared commandcenter for color options
         {
-            Button btn = (Button)sender;
+            Button btn = (Button)sender; 
+            //Typecast sender to button
+            //Used to be able to reach button information in switch
             
 
             selectcolor++;
-            switch (selectcolor)
+            switch (selectcolor)  //Fills users primary answer accordingly
             {
                 case 1:
                     Color1_btn.BackColor = btn.BackColor;
-                    btn.FlatAppearance.BorderColor = Color.Red;
+                    btn.FlatAppearance.BorderColor = Color.Red;         
                     Color1_btn.FlatAppearance.BorderColor = Color.Black;
-                    Color2_btn.FlatAppearance.BorderColor = Color.Red;
+                    Color2_btn.FlatAppearance.BorderColor = Color.Red;    //Shows next box to fill
                     break;
                 case 2:
                     Color2_btn.BackColor = btn.BackColor;
@@ -112,15 +100,15 @@ namespace Mastermind
                     break;
             }
             
-            if (selectcolor == 4)
+            if (selectcolor == 4) //One square blank will create program failure
             {
                 selectcolor = 0;
             }
         }
 
-        private void Clear_btn_Click(object sender, EventArgs e)
+        private void Clear_btn_Click(object sender, EventArgs e) //Clears the primary answer
         {
-            Color1_btn.BackColor = Color.Transparent;
+            Color1_btn.BackColor = Color.Transparent; 
             Color2_btn.BackColor = Color.Transparent;
             Color3_btn.BackColor = Color.Transparent;
             Color4_btn.BackColor = Color.Transparent;
@@ -138,7 +126,7 @@ namespace Mastermind
 
         }
 
-        static int colortranslate(Color backcolor)
+        static int Colortranslate(Color backcolor) //Mehod for translating colors to numbers
         {
             if (backcolor == Color.Blue) { return 1; }
             if (backcolor == Color.Lime) { return 2; }
@@ -150,135 +138,78 @@ namespace Mastermind
 
         private void Done_btn_Click(object sender, EventArgs e)
         {
-            try1[0] = colortranslate(Color1_btn.BackColor);
-            try1[1] = colortranslate(Color2_btn.BackColor);
-            try1[2] = colortranslate(Color3_btn.BackColor);
-            try1[3] = colortranslate(Color4_btn.BackColor);
+            attempt[0] = Colortranslate(Color1_btn.BackColor); //fills try1 with numbers
+            attempt[1] = Colortranslate(Color2_btn.BackColor);
+            attempt[2] = Colortranslate(Color3_btn.BackColor);
+            attempt[3] = Colortranslate(Color4_btn.BackColor);
+            
+            UserTry++;
+            switch (UserTry)
+            {
+                case 1:
+                    
 
-            kod1_btn1.BackColor = Color1_btn.BackColor;
-            kod1_btn2.BackColor = Color2_btn.BackColor;
-            kod1_btn3.BackColor = Color3_btn.BackColor;
-            kod1_btn4.BackColor = Color4_btn.BackColor;
+                    code1_btn1.BackColor = Color1_btn.BackColor;  //when Done is clicked code combination is chosen and displayed
+                    code1_btn2.BackColor = Color2_btn.BackColor;
+                    code1_btn3.BackColor = Color3_btn.BackColor;
+                    code1_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 2:
+                    
+                    code2_btn1.BackColor = Color1_btn.BackColor;  
+                    code2_btn2.BackColor = Color2_btn.BackColor;
+                    code2_btn3.BackColor = Color3_btn.BackColor;
+                    code2_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 3:
+                    code3_btn1.BackColor = Color1_btn.BackColor; 
+                    code3_btn2.BackColor = Color2_btn.BackColor;
+                    code3_btn3.BackColor = Color3_btn.BackColor;
+                    code3_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 4:
+                    code4_btn1.BackColor = Color1_btn.BackColor;
+                    code4_btn2.BackColor = Color2_btn.BackColor;
+                    code4_btn3.BackColor = Color3_btn.BackColor;
+                    code4_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 5:
+                    code5_btn1.BackColor = Color1_btn.BackColor;
+                    code5_btn2.BackColor = Color2_btn.BackColor;
+                    code5_btn3.BackColor = Color3_btn.BackColor;
+                    code5_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 6:
+                    code6_btn1.BackColor = Color1_btn.BackColor;
+                    code6_btn2.BackColor = Color2_btn.BackColor;
+                    code6_btn3.BackColor = Color3_btn.BackColor;
+                    code6_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 7:
+                    code7_btn1.BackColor = Color1_btn.BackColor;
+                    code7_btn2.BackColor = Color2_btn.BackColor;
+                    code7_btn3.BackColor = Color3_btn.BackColor;
+                    code7_btn4.BackColor = Color4_btn.BackColor;
+                    break;
+                case 8:
+                    code8_btn1.BackColor = Color1_btn.BackColor;
+                    code8_btn2.BackColor = Color2_btn.BackColor;
+                    code8_btn3.BackColor = Color3_btn.BackColor;
+                    code8_btn4.BackColor = Color4_btn.BackColor;
+                    break;
 
 
-
-            /*
-            if (Color1_btn.BackColor == Blue_btn.BackColor)
-            {
-                kod1[plats] = 1;
-                kod1_btn1.BackColor = Blue_btn.BackColor;
-
-            }
-            if (Color1_btn.BackColor == Green_btn.BackColor)
-            {
-                kod1[plats] = 2;
-                kod1_btn1.BackColor = Green_btn.BackColor;
-            }
-            if (Color1_btn.BackColor == Yellow_btn.BackColor)
-            {
-                kod1[plats] = 3;
-                kod1_btn1.BackColor = Yellow_btn.BackColor;
-            }
-            if (Color1_btn.BackColor == Red_btn.BackColor)
-            {
-                kod1[plats] = 4;
-                kod1_btn1.BackColor = Red_btn.BackColor;
-            }
-            if (Color1_btn.BackColor == Purple_btn.BackColor)
-            {
-                kod1[plats] = 5;
-                kod1_btn1.BackColor = Purple_btn.BackColor;
-            }
-            plats++;
-
-            if (Color2_btn.BackColor == Blue_btn.BackColor)
-            {
-                kod1[plats] = 1;
-                kod1_btn2.BackColor = Blue_btn.BackColor;
-
-
-            }
-            if (Color2_btn.BackColor == Green_btn.BackColor)
-            {
-                kod1[plats] = 2;
-                kod1_btn2.BackColor = Green_btn.BackColor;
-            }
-            if (Color2_btn.BackColor == Yellow_btn.BackColor)
-            {
-                kod1[plats] = 3;
-                kod1_btn2.BackColor = Yellow_btn.BackColor;
-            }
-            if (Color2_btn.BackColor == Red_btn.BackColor)
-            {
-                kod1[plats] = 4;
-                kod1_btn2.BackColor = Red_btn.BackColor;
-            }
-            if (Color2_btn.BackColor == Purple_btn.BackColor)
-            {
-                kod1[plats] = 5;
-                kod1_btn2.BackColor = Purple_btn.BackColor;
-            }
-            plats++;
-
-            if (Color3_btn.BackColor == Blue_btn.BackColor)
-            {
-                kod1[plats] = 1;
-                kod1_btn3.BackColor = Blue_btn.BackColor;
-            }
-            if (Color3_btn.BackColor == Green_btn.BackColor)
-            {
-                kod1[plats] = 2;
-                kod1_btn3.BackColor = Green_btn.BackColor;
-            }
-            if (Color3_btn.BackColor == Yellow_btn.BackColor)
-            {
-                kod1[plats] = 3;
-                kod1_btn3.BackColor = Yellow_btn.BackColor;
-            }
-            if (Color3_btn.BackColor == Red_btn.BackColor)
-            {
-                kod1[plats] = 4;
-                kod1_btn3.BackColor = Red_btn.BackColor;
-            }
-            if (Color3_btn.BackColor == Purple_btn.BackColor)
-            {
-                kod1[plats] = 5;
-                kod1_btn3.BackColor = Purple_btn.BackColor;
-            }
-            plats++;
-            if (Color4_btn.BackColor == Blue_btn.BackColor)
-            {
-                kod1[plats] = 1;
-                kod1_btn4.BackColor = Blue_btn.BackColor;
-            }
-            if (Color4_btn.BackColor == Green_btn.BackColor)
-            {
-                kod1[plats] = 2;
-                kod1_btn4.BackColor = Green_btn.BackColor;
-            }
-            if (Color4_btn.BackColor == Yellow_btn.BackColor)
-            {
-                kod1[plats] = 3;
-                kod1_btn4.BackColor = Yellow_btn.BackColor;
-            }
-            if (Color4_btn.BackColor == Red_btn.BackColor)
-            {
-                kod1[plats] = 4;
-                kod1_btn4.BackColor = Red_btn.BackColor;
             }
 
-            if (Color4_btn.BackColor == Purple_btn.BackColor)
-            {
-                kod1[plats] = 5;
-                kod1_btn4.BackColor = Purple_btn.BackColor;
-            }*/
 
+
+           
 
 
 
             for (int i = 0; i < 4; i++)
             {
-                listBox2.Items.Add(try1[i]);
+                listBox2.Items.Add(attempt[i]); //will not be used in final version
             }
 
         }
